@@ -1,0 +1,5 @@
+nome = input("Como te chamas? ")
+ano = float (input ("Em que ano nasceste? "))
+escolha = int (input ("Escolha o ano em que pertende calcular a sua futura idade: "))
+back = int((escolha - ano))
+print (nome, "em", escolha, "farás", back, "anos.")

@@ -1,0 +1,41 @@
+#FUNCAO QUE CRIA UMA LISTA COM OS NUMEROS QUE O UTILIZADOR INSERE
+def inputFloatList():
+    lista = []
+    while (input != ""):
+        numeros = input()
+        if (numeros == ""):
+            break
+        else: 
+            numeros = float(numeros)
+        lista.append(numeros)
+    print("Lista:\n", lista)
+    return (lista)
+
+#FUNCAO QUE CONTA SE O ELEMENTO E INFERIOR AO VALOR V INSERIDO PELO UTILIZADOR
+def countLower (lst,v):
+    novalista = []
+    for n in lst:
+        if (n<v):
+            novalista.append(n)
+    print ("Lista com valores inferiores a v:\n", novalista)
+
+def minmax(lst):
+    print (lst)
+    anterior = 0
+    for n in lst:
+        if (n <anterior)):
+            min = n
+        else:
+            max = anterior
+    print("Minimo: ", min)
+    print ("Máximo: ", max)
+
+
+
+# FUNCAO PRINCIPAL
+def main():
+    numver = float(input("Insira o valor de v:\n"))
+    lista = inputFloatList()
+    countLower(lista,numver)
+    minmax(lista)
+main()
