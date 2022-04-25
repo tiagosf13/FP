@@ -123,7 +123,6 @@ def ver_emprestimos(lista_emprestimos):
         print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
     main()
 
-
 def carregar_ficheiro_emprestimos():
     lst=[]
     with open("emprestimos.txt") as file:
